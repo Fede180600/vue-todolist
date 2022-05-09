@@ -29,30 +29,13 @@
         <main>
             <section class="todos">
                 <ul class="todos-list">
-                    <li>
-                        Fare la spesa
+                    <li v-for="item in todos">
+                        {{ item.text }}
                         <div class="todo-action">
                             <i class="fas fa-trash-alt"></i>
                         </div>
                     </li>
-                    <li>
-                        Andare in anagrafe
-                        <div class="todo-action">
-                            <i class="fas fa-trash-alt"></i>
-                        </div>
-                    </li>
-                    <li>
-                        Chiamare l'assicurazione
-                        <div class="todo-action">
-                            <i class="fas fa-trash-alt"></i>
-                        </div>
-                    </li>
-                    <li>
-                        Rinnovare l'abbonamento in palestra
-                        <div class="todo-action">
-                            <i class="fas fa-trash-alt"></i>
-                        </div>
-                    </li>
+                    
                     
                 </ul>
             </section>

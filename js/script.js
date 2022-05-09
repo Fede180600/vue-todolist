@@ -13,7 +13,7 @@ const app = new Vue(
                 },
                 {
                     text: 'Fare l\'esercizio pomeridiano',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'Chiamare l\'assicurazione',
@@ -24,6 +24,11 @@ const app = new Vue(
                     done: false
                 }
             ]
+        },
+        methods: {
+            removeTodo: function(index) {
+                this.todos.splice(index, 1);
+            },
         }
     }
 )

@@ -33,3 +33,7 @@ ul.todos-list li {
     display: flex;
     justify-content: space-between;
 }
+
+.todo-action i {
+    color: red;
+}

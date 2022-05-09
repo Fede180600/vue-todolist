@@ -27,6 +27,18 @@
 
         <!-- MAIN -->
         <main>
+            <!-- ADD TODO -->
+            <section class="add-todo">
+                <input 
+                type="text" 
+                placeholder="Aggiungi un ToDo.." 
+                @keyup.enter="addTodo" 
+                v-model="newTodo"
+                >
+                <button @click="addTodo">Aggiungi</button>
+            </section>
+
+            <!-- TODO LIST -->
             <section class="todos">
                 <ul class="todos-list">
                     <li v-for="(item, index) in todos"

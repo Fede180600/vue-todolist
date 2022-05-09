@@ -17,14 +17,31 @@ header {
     height: 100px;
     width: 100%;
     border-bottom: 1px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 /* MAIN */
+/* add todo */
+.add-todo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add-todo input,
+.add-todo button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* /add todo */
+
+
 section.todos ul {
     width: 30%;
     margin: 0 auto;
     border: 1px solid black;
     list-style: none;
+    background-color: lightgray;
 }
 
 ul.todos-list li {

@@ -23,11 +23,20 @@ const app = new Vue(
                     text: 'Diventare ricchi',
                     done: false
                 }
-            ]
+            ],
+            newTodo: '',
         },
         methods: {
             removeTodo: function(index) {
                 this.todos.splice(index, 1);
+            },
+
+            addTodo: function() {
+                const trimmedString = this.newTodo.trim();
+                if(trimmedString.length > 2) {
+                    this.todos.push(trimmedString);
+                    this.newTodo = '';
+                }
             },
         }
     }

@@ -8,6 +8,10 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+.done {
+    text-decoration: line-through;
+}
+
 /* HEADER */
 header {
     height: 100px;

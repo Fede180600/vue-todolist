@@ -29,7 +29,8 @@
         <main>
             <section class="todos">
                 <ul class="todos-list">
-                    <li v-for="item in todos">
+                    <li v-for="item in todos"
+                    :class="item.done ? 'done' : '' ">
                         {{ item.text }}
                         <div class="todo-action">
                             <i class="fas fa-trash-alt"></i>

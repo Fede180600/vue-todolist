@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+/* MAIN */
+section.todos ul {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+    list-style: none;
+}
+
+ul.todos-list li {
+    border-bottom: 1px solid gray;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}

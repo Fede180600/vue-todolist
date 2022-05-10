@@ -24,19 +24,20 @@ const app = new Vue(
                     done: false
                 }
             ],
-            newTodo: '',
+            newToDo: '',
         },
         methods: {
             removeTodo: function(index) {
                 this.todos.splice(index, 1);
             },
 
-            addTodo: function() {
-                const trimmedString = this.newTodo.trim();
-                if(trimmedString.length > 2) {
-                    this.todos.push(trimmedString);
-                    this.newTodo = '';
+            addToDo: function() {
+                const newToDo = {
+                    text: this.newToDo,
+                    done: false,
                 }
+                this.todos.push(newToDo);
+                this.newToDo = "";
             },
         }
     }
